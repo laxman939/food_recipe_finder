@@ -38,7 +38,8 @@ const SearchBox = styled.div`
 const SearchInput = styled.input`
   border: none;
   outline: none;
-  margin-left: 15px;
+  margin: 0px 18px;
+  padding: 14px opx;
   font-size: 16px;
   color: #865019d9;
   background-color: #eeddc3;
