@@ -50,20 +50,35 @@ const RecipeType = styled.span`
   color: #7e0404;
 `;
 
-const RecipeSeeMore = styled(RecipeType)`
+const RecipeSeeMore = styled.span`
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 2px 0px 0px 6px;
+  padding: 2px;
+  width: 126px;
+  color: #c81d1d;
+  cursor: pointer;
+  border: 1px solid #e65f5f;
+  background-color: #e0caca;
+  border-radius: 4px;
+`;
+
+const RecipeIngredients = styled(RecipeType)`
   font-size: 12px;
   font-weight: 600;
   padding: 2px;
-  width: 65px;
-  color: red;
+  width: 70px;
+  color: #031248;
   cursor: pointer;
-  border: 1px solid red;
+  border: 1px solid #940606;
   border-radius: 4px;
+  background-color: #ecdfdf;
 `;
 
 const RecipeInfo1 = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 5px;
 `;
 
@@ -73,7 +88,9 @@ function RecipeComponent({ recipeList }) {
   // console.log("Props " + recipeList[0].recipe.label); --> Using props (one time space)
   // console.log("store " + allRecipes[0].recipe.label); --> Using redux state (required two times space){Working}
   console.log(allRecipes);
+
   const [show, setShow] = useState(false);
+  const [showHealthLabels, setShowHealthLabels] = useState(false);
 
   //De-Structuring
   // const { ingredients, image, label, url } = recipeList.recipe;
@@ -104,6 +121,22 @@ function RecipeComponent({ recipeList }) {
           <RecipeSeeMore onClick={() => setShow(false)}>Close</RecipeSeeMore>
         </DialogActions>
       </Dialog>
+      <Dialog open={showHealthLabels}>
+        <DialogTitle>Health Labels</DialogTitle>
+        <DialogContent>
+          <ul>
+            {recipeList.length &&
+              recipeList[0].recipe.healthLabels.map((label, index) => (
+                <li key={index}>{label}</li>
+              ))}
+          </ul>
+        </DialogContent>
+        <DialogActions>
+          <RecipeSeeMore onClick={() => setShowHealthLabels(false)}>
+            Close
+          </RecipeSeeMore>
+        </DialogActions>
+      </Dialog>
       <RecipeListContainer>
         {recipeList.length ? (
           recipeList.map((recipe, index) => (
@@ -115,17 +148,18 @@ function RecipeComponent({ recipeList }) {
                   <b>Meal-Type: </b>
                   {recipe.recipe.mealType[0]}
                 </RecipeType>
+                <RecipeIngredients onClick={() => setShow(true)}>
+                  Ingredients
+                </RecipeIngredients>
+              </RecipeInfo1>
+              <RecipeInfo1>
+                <RecipeIngredients onClick={() => setShowHealthLabels(true)}>
+                  HealthLabels
+                </RecipeIngredients>
                 <RecipeSeeMore onClick={() => window.open(recipe.recipe.url)}>
-                  See more...
+                  See more about Recipe
                 </RecipeSeeMore>
               </RecipeInfo1>
-              <RecipeSeeMore onClick={() => setShow(true)}>
-                Ingredients
-              </RecipeSeeMore>
-              {/* <RecipeType>
-              <b>Meal-Type: </b>
-              {item.recipe.mealType[0]}
-            </RecipeType> */}
             </RecipeContainer>
           ))
         ) : (
