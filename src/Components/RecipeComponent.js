@@ -52,11 +52,12 @@ const RecipeType = styled.span`
 
 const RecipeSeeMore = styled.span`
   font-family: "Roboto", sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
+  text-align: center;
   margin: 2px 0px 0px 6px;
   padding: 2px;
-  width: 126px;
+  width: 136px;
   color: #c81d1d;
   cursor: pointer;
   border: 1px solid #e65f5f;
@@ -67,8 +68,9 @@ const RecipeSeeMore = styled.span`
 const RecipeIngredients = styled(RecipeType)`
   font-size: 12px;
   font-weight: 600;
+  text-align: center;
   padding: 2px;
-  width: 70px;
+  width: 72px;
   color: #031248;
   cursor: pointer;
   border: 1px solid #940606;
