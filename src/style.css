@@ -1,0 +1,19 @@
+body{
+    margin: 0px;
+    background-image: url('https://image.freepik.com/free-photo/vintage-crumpled-paper-textured-background_53876-103940.jpg');
+}
+h3{
+    color: #462607d9;  
+    margin-top: 1px;  
+}
+b{
+    color: rgb(129, 63, 72);
+    font-weight: 600;
+}
+.container:hover{
+    background-color: rgb(212, 200, 147);
+    zoom: 100.42%;
+}
+h1{
+    text-align: center;
+}
