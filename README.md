@@ -16,3 +16,15 @@ Styled Components
 Edamam API
 
 ### Screenshots
+
+#### Home page
+![Screenshot](https://github.com/laxman939/food_recipe_finder/blob/main/Screenshots/Recipe1.jpg?raw=true)
+
+#### Igredients Model
+![Screenshot](https://github.com/laxman939/food_recipe_finder/blob/main/Screenshots/Recipe2.jpg?raw=true)
+
+#### Health Label Model
+![Screenshot](https://github.com/laxman939/food_recipe_finder/blob/main/Screenshots/Recipe3.jpg?raw=true)
+
+#### Responsive
+![Screenshot](https://github.com/laxman939/food_recipe_finder/blob/main/Screenshots/Recipe4.jpg?raw=true)
