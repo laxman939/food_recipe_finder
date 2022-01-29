@@ -20,7 +20,7 @@ Edamam API
 #### Home page
 ![Screenshot](https://github.com/laxman939/food_recipe_finder/blob/main/Screenshots/Recipe1.jpg?raw=true)
 
-#### Igredients Model
+#### Ingredients Model
 ![Screenshot](https://github.com/laxman939/food_recipe_finder/blob/main/Screenshots/Recipe2.jpg?raw=true)
 
 #### Health Label Model
