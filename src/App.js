@@ -10,6 +10,9 @@ import "./style.css";
 import HeadComponent from "./Components/HeadComponent";
 import RecipeComponent from "./Components/RecipeComponent";
 
+// const API_ID = process.env.REACT_APP_API_ID;--> cors error
+// const API_KEY = process.env.REACT_APP_API_KEY;
+
 const API_ID = "568c35c4";
 const API_KEY = "db8fe679d0db6de4e1afe9c8a5481eee";
 
