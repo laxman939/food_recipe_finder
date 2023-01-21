@@ -56,7 +56,7 @@ const HeadComponent = (props) => {
 
     //To Limit Debouncing effect(Making more API calls)
     clearTimeout(timeOutId);
-    const timeout = setTimeout(() => fetchRecipe(value), 500);
+    const timeout = setTimeout(() => fetchRecipe(e.target.value), 500);
     // console.log(timeout);
     setTimeOutId(timeout);
   };

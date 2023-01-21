@@ -140,7 +140,7 @@ function RecipeComponent({ recipeList }) {
         </DialogActions>
       </Dialog>
       <RecipeListContainer>
-        {recipeList.length ? (
+        {recipeList.length > 1 ? (
           recipeList.map((recipe, index) => (
             <RecipeContainer key={index} className="container">
               <RecipeImage src={recipe.recipe.image} />
@@ -165,7 +165,7 @@ function RecipeComponent({ recipeList }) {
             </RecipeContainer>
           ))
         ) : (
-          <h3>Please use Space After Typing...</h3>
+          <h3>No recipes on your search</h3>
         )}
       </RecipeListContainer>
       {/*  <h1>Using Redux Store</h1>
