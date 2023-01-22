@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/food_recipe_finder/static/css/main.fcdb3447.css",
-    "main.js": "/food_recipe_finder/static/js/main.7f391c5f.js",
+    "main.js": "/food_recipe_finder/static/js/main.b5c95582.js",
     "index.html": "/food_recipe_finder/index.html",
     "main.fcdb3447.css.map": "/food_recipe_finder/static/css/main.fcdb3447.css.map",
-    "main.7f391c5f.js.map": "/food_recipe_finder/static/js/main.7f391c5f.js.map"
+    "main.b5c95582.js.map": "/food_recipe_finder/static/js/main.b5c95582.js.map"
   },
   "entrypoints": [
     "static/css/main.fcdb3447.css",
-    "static/js/main.7f391c5f.js"
+    "static/js/main.b5c95582.js"
   ]
 }
